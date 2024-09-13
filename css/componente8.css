@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+}
+
+.menu {
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+    border-radius: var(--menu-border-radius);
+}
+
+.menu--1 {
+    background-color: var(--menu-background-1); 
+}
+
+.menu--2 {
+    background-color: var(--menu-background-2); 
+}
+
+.menu--3 {
+    background-color: var(--menu-background-3); 
+}
+
+.menu--4 {
+    background-color: var(--menu-background-4); 
+}
+
+.menu__item {
+    padding: var(--menu-padding);
+    text-align: center;
+    border-radius: var(--menu-border-radius);
+    cursor: pointer;
+    font-size: var(--menu-font-size);
+    transition: background-color var(--menu-transition-time), transform var(--menu-transition-time);
+}
+
+.menu--1 .menu__item {
+    background-color: #333;
+    color: #fff;
+}
+
+.menu--1 .menu__item:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.menu--2 .menu__item--inicio {
+    background-color: #4CAF50; 
+    font-size: 20px;
+}
+
+.menu--2 .menu__item--contenido {
+    background-color: #2196F3; 
+}
+
+.menu--2 .menu__item--servicios {
+    background-color: #FF9800; 
+}
+
+.menu--2 .menu__item--contacto {
+    background-color: #F44336; 
+    transform: scale(1.1); 
+}
+
+.menu--2 .menu__item--acerca {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: #f1db5b; 
+}
+
+
+.menu--3 .menu__item {
+    background-color: #000;
+    color: #fff;
+}
+
+.menu--3 .menu__item:hover {
+    background-color: #ff5722; 
+    transform: rotate(5deg); 
+}
+
+.menu--3 .menu__item--inicio {
+    font-size: 22px;
+}
+
+.menu--3 .menu__item--contenido {
+    font-size: 16px;
+}
+
+.menu--3 .menu__item--servicios {
+    font-size: 18px;
+}
+
+.menu--3 .menu__item--contacto {
+    font-size: 20px;
+}
+
+.menu--3 .menu__item--acerca {
+    background-color: #444;
+    color: #00ff00;
+    transform: rotate(-3deg); 
+}
+
+.menu--4 .menu__item {
+    background-color: #e91e63; 
+    color: #fff;
+}
+
+.menu--4 .menu__item:hover {
+    background-color: #9c27b0; 
+    transform: scale(1.2); 
+}
+
+.menu--4 .menu__item--inicio {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu--4 .menu__item--contenido {
+    font-size: 18px;
+}
+
+.menu--4 .menu__item--servicios {
+    font-size: 20px;
+}
+
+.menu--4 .menu__item--contacto {
+    font-size: 18px;
+    background-color: #ff8560;
+}
+
+.menu--4 .menu__item--acerca {
+    background-color: #03a9f4; 
+    transform: skewX(10deg); 
+}

@@ -1,0 +1,66 @@
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    width: 250px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .card__image {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover; 
+    border-radius: var(--border-radius);
+    margin-bottom: 15px;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px) scale(1.05); 
+  }
+  
+  .card--luffy:hover {
+    background-color: #ff00008a; 
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); 
+  }
+  
+  .card--luffy .card__title {
+    color: #000000; 
+  }
+  
+  .card--zoro:hover {
+    background-color: #00ff0088;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); 
+  }
+  
+  .card--zoro .card__title {
+    color: #000000; 
+  }
+  
+  .card--nami:hover {
+    background-color: #0000ff91; 
+    box-shadow: 0 0 15px rgba(0, 0, 255, 0.5);
+  }
+  
+  .card--nami .card__title {
+    color: #000000;
+  }
+  
+  .card--chopper:hover {
+    background-color: #d2b48c85; 
+    box-shadow: 0 0 15px rgba(210, 180, 140, 0.5); 
+  }
+  
+  .card--chopper .card__title {
+    color: #000; 
+  }

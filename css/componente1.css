@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .componente {
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+  }
+  
+  .naruto-card {
+    background-color: var(--naruto-bg-color);
+    border-radius: var(--border-radius);
+    padding: 20px;
+  }
+  
+  .naruto-card__image {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .naruto-card__title {
+    color: var(--text-color-primary);
+    margin: 10px 0;
+  }
+  
+  .naruto-card__subtitle,
+  .naruto-card__description {
+    color: var(--text-color-secondary);
+    margin: 10px 0;
+  }
+  
+  .naruto-card__button {
+    background-color: var(--button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; 
+  }
+  
+  .naruto-card__button:hover {
+    background-color: var(--button-hover-color);
+    color: var(--button-text-hover-color); 
+    transform: scale(1.1); 
+  }
+  
+  .habilidad-card__button {
+    background-color: var(--action-btn-color);
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  .habilidad-card__button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgb(141, 0, 0), rgba(235, 212, 212, 0.877) 70%);
+    transform: translate(-50%, -50%);
+    transition: transform 0.7s, opacity 0.7s;
+    z-index: -1;
+  }
+  
+  .habilidad-card__button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.5;
+  }
+  
+  .jutsu-card {
+    background-color: var(--info-box-bg-color);
+    border: 1px solid #e0e0e0;
+    border-radius: var(--border-radius);
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .jutsu-card__image {
+    width: 150px; 
+    height: 150px; 
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .jutsu-card__title {
+    color: var(--text-color-primary);
+    margin: 10px 0;
+  }
+  
+  .jutsu-card__description {
+    color: var(--text-color-secondary);
+    margin: 10px 0;
+  }
+  
+  .jutsu-card__button {
+    background-color: var(--info-box-button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, color 0.3s; 
+  }
+  
+  .jutsu-card__button:hover {
+    background-color: var(--info-box-button-hover-color);
+    color: var(--button-text-hover-color); 
+    transform: translateY(-5px); 
+  }
+  
+  .alert-card {
+    padding: 20px;
+    background-color: var(--alert-bg-color);
+    color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .alert-card__close {
+    margin-left: 15px;
+    color: var(--closebtn-color);
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+  
+  .alert-card__close:hover {
+    color: var(--closebtn-hover-color);
+  }
+  
+  .alert-card__button {
+    background-color: var(--alert-button-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: box-shadow 0.3s; 
+  }
+  
+  .alert-card__button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, var(--highlight-color), transparent);
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.3s;
+    z-index: -1;
+  }
+  
+  .alert-card__button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  
+  .alert-card__button:hover {
+    box-shadow: 0 0 15px var(--highlight-color); 
+  }
+  
+  .alert-card__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 10px;
+  }

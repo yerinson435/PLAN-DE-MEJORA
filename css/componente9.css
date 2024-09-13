@@ -1,0 +1,89 @@
+.anime-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.anime {
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 20px;
+    width: 250px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: transform var(--transition-time), box-shadow var(--transition-time), background-color var(--transition-time);
+    position: relative;
+}
+
+.anime h2 {
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.anime p {
+    margin: 10px 0 0;
+    text-align: center;
+}
+
+.anime:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.anime-1 {
+    background-color: var(--bg-color-1);
+}
+
+.anime-1:hover {
+    background-color: var(--hover-color-1);
+    animation: rotate 1s linear infinite;
+    color: #ff0000;
+}
+
+.anime-2 {
+    background-color: var(--bg-color-2);
+}
+
+.anime-2:hover{
+    color: #fdfa3a;
+}
+
+.anime-2:active {
+    display: none;
+}
+
+.anime-3 {
+    background-color: var(--bg-color-3);
+}
+
+.anime-3:hover {
+    background-color: var(--hover-color-3);
+    transform: scale(0.9);
+    color: #ffad7d;
+}
+
+.anime-4 {
+    background-color: var(--bg-color-4);
+}
+
+.anime-4:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+    background-color: var(--hover-color-4);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
